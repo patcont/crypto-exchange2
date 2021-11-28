@@ -27,6 +27,10 @@ public class Exchange {
                 System.out.print("2. Check today's crypto prices \n");
                 System.out.print("3. Buy BTC \n");
                 System.out.print("4. Sell BTC \n");
+                System.out.print("5. Buy DOT \n");
+                System.out.print("6. Sell DOT \n");
+                System.out.print("7. Buy KSM \n");
+                System.out.print("8. Sell KSM \n");
                 System.out.print("13. Exit \n");
                 System.out.print("");
                 System.out.print("\n Please Enter Your Menu Choice: ");
@@ -35,36 +39,68 @@ public class Exchange {
                 choice = scan.nextInt();
 
                 switch (choice) {
-                case 1:
-                    // Check Your Balances
-                    currentBalance();
-                    System.out.println("");
-                    pushEnter();
-                    break;
-                case 2:
-                    // Check today's crypto prices
-                    a.CryptoPrices();
-                    System.out.println("");
-                    pushEnter();
-                    break;
-                case 3:
-                    a.AgentBuyBTC();
-                    System.out.println("");
-                    currentBalance();
-                    System.out.println("");
-                    pushEnter();
-                    break;
-                case 4:
-                    a.AgentSellBTC();
-                    System.out.println("");
-                    currentBalance();
-                    System.out.println("");
-                    pushEnter();
-                    break;
+                    case 1:
+                        // Check Your Balances
+                        currentBalance();
+                        System.out.println("");
+                        pushEnter();
+                        break;
+                    case 2:
+                        // Check today's crypto prices
+                        a.CryptoPrices();
+                        System.out.println("");
+                        pushEnter();
+                        break;
+                    case 3:
+                        a.AgentBuyBTC();
+                        System.out.println("");
+                        currentBalance();
+                        System.out.println("");
+                        pushEnter();
+                        break;
+                    case 4:
+                        a.AgentSellBTC();
+                        System.out.println("");
+                        currentBalance();
+                        System.out.println("");
+                        pushEnter();
+                        break;
 
-                default:
-                    System.out.print("Option not valid, please try another option");
-                    break;
+                    case 5:
+                        a.AgentSellBTC();
+                        System.out.println("");
+                        currentBalance();
+                        System.out.println("");
+                        pushEnter();
+                        break;
+
+                    case 6:
+                        a.AgentSellBTC();
+                        System.out.println("");
+                        currentBalance();
+                        System.out.println("");
+                        pushEnter();
+                        break;
+
+                    case 7:
+                        a.AgentSellBTC();
+                        System.out.println("");
+                        currentBalance();
+                        System.out.println("");
+                        pushEnter();
+                        break;
+
+                    case 8:
+                        a.AgentSellBTC();
+                        System.out.println("");
+                        currentBalance();
+                        System.out.println("");
+                        pushEnter();
+                        break;
+
+                    default:
+                        System.out.print("Option not valid, please try another option");
+                        break;
                 }
 
             }

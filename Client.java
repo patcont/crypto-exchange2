@@ -8,6 +8,8 @@ public class Client {
     // Customer's Starting Currency balances
     float ClientUSDBalance = 5000000.00f;
     float ClientBTCBalance = 0.00f;
+    float ClientDOTBalance = 0.00f;
+    float ClientKSMBalance = 0.00f;
 
     public String CustomerName;
 
@@ -30,5 +32,11 @@ public class Client {
         return ClientBTCBalance;
     }
 
-}
+    public float ClientDOTBalance() {
+        return ClientDOTBalance;
+    }
 
+    public float ClientKSMBalance() {
+        return ClientKSMBalance;
+    }
+}
